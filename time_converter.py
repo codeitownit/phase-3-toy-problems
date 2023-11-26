@@ -1,24 +1,22 @@
-# def time_converter(hour, minute, period):
-    
-#     if hour != 12 and (period == "pm" or period == "PM"):
-#         hour +=12
-
-#     elif hour == 12 and (period == "am" or period == "AM"):
-#          hour = 0
+def time_converter(hour, minute, period):
+    # check if hour is not equal to 12 
+    if hour != 12 and (period == "pm" or period == "PM"):
+        hour +=12
+    # check if hour is equal to 12 and update hour to 0 if true otherwise hour remains the same
+    elif hour == 12 and (period == "am" or period == "AM"):
+         hour = 0
        
-    
-#     hour = str(hour).rjust(2, '0')
-#     return f"{hour}{minute}"
+    # update hour and minute with 2 digits
+    hour = str(hour).rjust(2, '0')
+    minute = str(minute).rjust(2, '0')
+    # return time in 24 hour format
+    return f"{hour}{minute}" 
 
 
-# print(time_converter(12, 12, "PM"))
+print(time_converter(8, 30, "AM")) #0830
+print(time_converter(8, 30, "PM")) #2030
+print(time_converter(12, 00, "AM")) #0000
+print(time_converter(12, 00, "PM")) #1200
 
 
-def convert_to_24(hour, minutes, period):
-    
-    time = f"00{minutes}"
-
-    return time if hour == 12 and (period == "AM" or period =="am") else f"{hour+12}{minutes}"
-
-print(convert_to_24(1, 44, "AM"))
 
