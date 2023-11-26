@@ -13,6 +13,7 @@ def is_positive(a, b, c):
     # Return True if exactly two integers are positive, otherwise False
     return positive_count == 2
 
+
 print(is_positive(2, 4, -3))  #True
 print(is_positive(-4, 6, 8)) #True 
 print(is_positive(4, -6, 9)) #True 

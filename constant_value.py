@@ -28,6 +28,7 @@ def highest_consonant_value(s):
     
     return max_value
 
+
 # Example usage
 input_string = "Strength"
 result = highest_consonant_value(input_string)
