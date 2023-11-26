@@ -31,7 +31,7 @@
 
         (-14, -3, -4) == False
 
-#### Net Salary Calculator
+#### Consonant value
     Given a lowercase string that has alphabetic characters only and no spaces, write a program that returns the highest value of consonant substrings. Consonants are any letters of the alphabet except "aeiou".We shall assign the following values: a = 1, b = 2, c = 3, .... z = 26.
 
     For the word "zodiacs", solve("zodiacs") = 26
